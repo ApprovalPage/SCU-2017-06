@@ -10,8 +10,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/HTML5rastershad.png?1497570815621", id:"HTML5rastershad"},
-		{src:"images/Wheels336x280.jpg?1497570815621", id:"Wheels336x280"}
+		{src:"images/HTML5rastershad.png?1497648010909", id:"HTML5rastershad"},
+		{src:"images/Wheels336x280.jpg?1497648010909", id:"Wheels336x280"}
 	]
 };
 
@@ -426,12 +426,13 @@ p.nominalBounds = new cjs.Rectangle(0,0,336,140);
 
 	// Layer 1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#000000").ss(1,1,0,3).p("A6P13MA0fAAAMAAAArvMg0fAAAg");
+	this.shape.graphics.f().s("#000000").ss(1,1,0,3).p("A6K1yMA0VAAAMAAAArlMg0VAAAg");
+	this.shape.setTransform(-0.5,-0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-169,-141,338,282);
+p.nominalBounds = new cjs.Rectangle(-169,-141,337,281);
 
 
 (lib._2016TAG = function(mode,startPosition,loop) {
@@ -576,7 +577,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	// border
 	this.instance_2 = new lib.border336x280();
 	this.instance_2.parent = this;
-	this.instance_2.setTransform(168.5,140.5);
+	this.instance_2.setTransform(168.6,140.5,1,1,0,0,0,0.1,0);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).to({_off:true},182).wait(1));
 
@@ -686,7 +687,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.timeline.addTween(cjs.Tween.get(this.instance_12).wait(181).to({_off:false},0).to({_off:true},1).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(167,140,338,281);
+p.nominalBounds = new cjs.Rectangle(167,140,337.1,280);
 
 })(lib = lib||{}, images = images||{}, createjs = createjs||{}, ss = ss||{});
 var lib, images, createjs, ss;
