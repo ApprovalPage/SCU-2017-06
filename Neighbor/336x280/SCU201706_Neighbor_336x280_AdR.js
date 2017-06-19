@@ -10,8 +10,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/HTML5rastershad.png?1497648022503", id:"HTML5rastershad"},
-		{src:"images/Neighbor336x280.jpg?1497648022503", id:"Neighbor336x280"}
+		{src:"images/HTML5rastershad.png?1497889486038", id:"HTML5rastershad"},
+		{src:"images/Neighbor336x280.jpg?1497889486038", id:"Neighbor336x280"}
 	]
 };
 
@@ -622,7 +622,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	// PIC shad
 	this.instance_3 = new lib.HTML5rastershad_1();
 	this.instance_3.parent = this;
-	this.instance_3.setTransform(168,176,1,1,0,0,0,0,10);
+	this.instance_3.setTransform(168,175,1,1,0,0,0,0,10);
 	this.instance_3.alpha = 0.199;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(80).to({y:126},9).wait(80).to({y:10},9).to({_off:true},1).wait(4));
