@@ -10,8 +10,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/HTML5rastershad.png?1497570834098", id:"HTML5rastershad"},
-		{src:"images/Wheels160x600.jpg?1497570834098", id:"Wheels160x600"}
+		{src:"images/HTML5rastershad.png?1497891334339", id:"HTML5rastershad"},
+		{src:"images/Wheels160x600.jpg?1497891334339", id:"Wheels160x600"}
 	]
 };
 
@@ -503,23 +503,31 @@ p.nominalBounds = new cjs.Rectangle(-75.9,0,151.9,39.3);
 (lib.pic = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// Layer 1
+	// mask (mask)
+	var mask = new cjs.Shape();
+	mask._off = true;
+	mask.graphics.p("AurKJIAA0RIdWAAIAAURg");
+	mask.setTransform(-0.5,70);
+
+	// pic
 	this.instance = new lib.Wheels160x600();
 	this.instance.parent = this;
 	this.instance.setTransform(-80,0);
+
+	this.instance.mask = mask;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	// shad
 	this.instance_1 = new lib.HTML5rastershad_1();
 	this.instance_1.parent = this;
-	this.instance_1.setTransform(0,130,1,1,0,0,0,0,10);
+	this.instance_1.setTransform(0,145,1,1,0,0,0,0,10);
 	this.instance_1.alpha = 0.199;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-168,0,336,177);
+p.nominalBounds = new cjs.Rectangle(-168,5.1,336,150);
 
 
 (lib._2016TAGvert = function(mode,startPosition,loop) {
@@ -599,19 +607,10 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).to({_off:true},164).wait(1));
 
-	// mask (mask)
-	var mask = new cjs.Shape();
-	mask._off = true;
-	var mask_graphics_0 = new cjs.Graphics().p("AurKJIAA0RIdWAAIAAURg");
-
-	this.timeline.addTween(cjs.Tween.get(mask).to({graphics:mask_graphics_0,x:79,y:54}).wait(164).to({graphics:null,x:0,y:0}).wait(1));
-
 	// PIC
 	this.instance_3 = new lib.pic();
 	this.instance_3.parent = this;
 	this.instance_3.setTransform(230,41,1,1,0,0,0,150,57);
-
-	this.instance_3.mask = mask;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).to({_off:true},164).wait(1));
 
@@ -685,7 +684,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.timeline.addTween(cjs.Tween.get(this.instance_12).wait(163).to({_off:false},0).to({_off:true},1).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-144,289.1,800,1221);
+p.nominalBounds = new cjs.Rectangle(-144,284,800,1226);
 
 })(lib = lib||{}, images = images||{}, createjs = createjs||{}, ss = ss||{});
 var lib, images, createjs, ss;
