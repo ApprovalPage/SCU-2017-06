@@ -10,8 +10,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/HTML5rastershad.png?1497906925966", id:"HTML5rastershad"},
-		{src:"images/YourPlace160x600.jpg?1497906925966", id:"YourPlace160x600"}
+		{src:"images/HTML5rastershad.png?1497908690501", id:"HTML5rastershad"},
+		{src:"images/YourPlace160x600.jpg?1497908690501", id:"YourPlace160x600"}
 	]
 };
 
@@ -579,7 +579,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	// ncua
 	this.instance = new lib.ncuahorizai();
 	this.instance.parent = this;
-	this.instance.setTransform(80,586.8,1.2,1.2,0,0,0,0,3.6);
+	this.instance.setTransform(80,586.8,1.13,1.13,0,0,0,0.1,3.6);
 	this.instance._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(163).to({_off:false},0).to({_off:true},1).wait(1));
