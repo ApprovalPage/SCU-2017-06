@@ -10,16 +10,14 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Reasons160x600.jpg?1497908671889", id:"Reasons160x600"},
-		{src:"images/SCU201706_Reasons_160x600_AdR_atlas_P_.png?1497908671886", id:"SCU201706_Reasons_160x600_AdR_atlas_P_"}
+		{src:"images/HTML5rastershad.png?1497908966096", id:"HTML5rastershad"},
+		{src:"images/Reasons160x600.jpg?1497908966096", id:"Reasons160x600"}
 	]
 };
 
 
 
-lib.ssMetadata = [
-		{name:"SCU201706_Reasons_160x600_AdR_atlas_P_", frames: [[0,73,336,20],[0,0,162,71]]}
-];
+lib.ssMetadata = [];
 
 
 // symbols:
@@ -27,17 +25,9 @@ lib.ssMetadata = [
 
 
 (lib.HTML5rastershad = function() {
-	this.spriteSheet = ss["SCU201706_Reasons_160x600_AdR_atlas_P_"];
-	this.gotoAndStop(0);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.ncualegal = function() {
-	this.spriteSheet = ss["SCU201706_Reasons_160x600_AdR_atlas_P_"];
-	this.gotoAndStop(1);
-}).prototype = p = new cjs.Sprite();
-
+	this.initialize(img.HTML5rastershad);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,336,20);
 
 
 (lib.Reasons160x600 = function() {
@@ -734,28 +724,20 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_10).to({_off:true},164).wait(1));
 
-	// TEST
-	this.instance_11 = new lib.ncualegal();
-	this.instance_11.parent = this;
-	this.instance_11.setTransform(-20,558);
-	this.instance_11._off = true;
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_11).wait(163).to({_off:false},0).wait(2));
-
 	// logo box
-	this.instance_12 = new lib.box1();
-	this.instance_12.parent = this;
-	this.instance_12.setTransform(71.2,197.4,0.475,4.282,0,0,0,150,46.1);
+	this.instance_11 = new lib.box1();
+	this.instance_11.parent = this;
+	this.instance_11.setTransform(71.2,197.4,0.475,4.282,0,0,0,150,46.1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_12).to({_off:true},164).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_11).to({_off:true},164).wait(1));
 
 	// EHO
-	this.instance_13 = new lib.EqualHousingOpportunityrevai("synched",0);
-	this.instance_13.parent = this;
-	this.instance_13.setTransform(17.1,232.1,0.07,0.07,0,0,0,135,145);
-	this.instance_13._off = true;
+	this.instance_12 = new lib.EqualHousingOpportunityrevai("synched",0);
+	this.instance_12.parent = this;
+	this.instance_12.setTransform(17.1,232.1,0.07,0.07,0,0,0,135,145);
+	this.instance_12._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_13).wait(163).to({_off:false},0).to({_off:true},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_12).wait(163).to({_off:false},0).to({_off:true},1).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-144,282,780,1061);
