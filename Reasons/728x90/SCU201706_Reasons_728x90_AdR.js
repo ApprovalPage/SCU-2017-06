@@ -10,8 +10,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/HTML5rastershad.png?1497572125701", id:"HTML5rastershad"},
-		{src:"images/Reasons336x280.jpg?1497572125701", id:"Reasons336x280"}
+		{src:"images/HTML5rastershad.png?1497889779116", id:"HTML5rastershad"},
+		{src:"images/Reasons336x280.jpg?1497889779116", id:"Reasons336x280"}
 	]
 };
 
@@ -577,13 +577,13 @@ p.nominalBounds = new cjs.Rectangle(-75.9,0,151.9,39.3);
 	// shad
 	this.instance_1 = new lib.HTML5rastershad_1();
 	this.instance_1.parent = this;
-	this.instance_1.setTransform(247.6,75.8,1,1,-90,0,0,0,10);
+	this.instance_1.setTransform(286.1,75.8,1,1,-90,0,0,0,10);
 	this.instance_1.alpha = 0.199;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-23,-92.2,299.1,336);
+p.nominalBounds = new cjs.Rectangle(-23,-92.2,319.1,336);
 
 
 // stage content:
